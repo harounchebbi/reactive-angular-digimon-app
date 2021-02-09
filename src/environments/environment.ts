@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  DIGIMON_API_URL: 'https://digimon-api.vercel.app/api/digimon',
+  DIGIMON_BY_NAME_API_URL: 'https://digimon-api.vercel.app/api/digimon/name/',
+  DIGIMON_BY_LEVEL : 'https://digimon-api.vercel.app/api/digimon/level/'
 };
 
 /*
