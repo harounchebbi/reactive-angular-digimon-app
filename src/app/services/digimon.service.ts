@@ -22,6 +22,9 @@ export class DigimonService {
   }
 
   getDigimonsByLevel(level: string): Observable<Digimon[]> {
+    if(level ==="All"){
+      return this.digimons$;
+    }
     return this.httpClient.get<Digimon[]>(
       `${environment.DIGIMON_BY_LEVEL}` + level
     );

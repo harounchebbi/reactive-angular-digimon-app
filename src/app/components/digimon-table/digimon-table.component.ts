@@ -18,13 +18,14 @@ export class DigimonTableComponent implements OnInit {
   isError = false;
   isDisplayed = true;
   levels = [
+    { digivolution: "All" },
     { digivolution: "Fresh" },
     { digivolution: "In Training" },
     { digivolution: "Rookie" },
     { digivolution: "Champion" },
     { digivolution: "Ultimate" },
     { digivolution: "Mega" },
-    { digivolution: "Armor" },
+    { digivolution: "Armor" }
   ];
   constructor(
     private digimonService: DigimonService,
@@ -63,6 +64,8 @@ export class DigimonTableComponent implements OnInit {
   filterDigimons(event) {
     this.digimonService.getDigimonsByLevel(event.value).subscribe((res) => {
       this.searchByLevel$.next(res);
+      this.digimonList = [];
+      this.digimonList = res;
     });
   }
 
