@@ -1,4 +1,4 @@
-# Ngx-Digimon
+# reactive-angular-digimon-app
 
 A Reactive Angular application for browsing digimons! A complete catalogue of digimons which your can search using the text box and filter.
 
