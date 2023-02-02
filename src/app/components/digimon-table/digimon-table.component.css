@@ -28,3 +28,7 @@
 .form-filter {
   margin-left: 21px;
 }
+
+.digimon-card {
+  max-width: 200px;
+}

@@ -25,7 +25,8 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "node_modules/ngx-spinner/animations/ball-8bits.css",
               "src/styles.css"
             ],
             "scripts": []
