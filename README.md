@@ -6,9 +6,9 @@ A Reactive Angular application for browsing digimons! A complete catalogue of di
 
 ![screenshot](/ngx-digimon-pic.PNG)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4. 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli). 
 
-#### Check out the App here: [Live Preview](https://relaxed-raman-8d90dc.netlify.app/)
+#### Check out the App here: [Live Preview](https://ngx-digimons.netlify.app/)
 
 It uses both [Angular Material](https://material.angular.io/) for UI components &  [ngx-spinner](https://github.com/Napster2210/ngx-spinner) for the loading spinner. 
 
