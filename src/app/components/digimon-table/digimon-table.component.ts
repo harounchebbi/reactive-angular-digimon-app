@@ -8,9 +8,9 @@ import {
   map,
   merge,
   Observable,
+  shareReplay,
   startWith,
   switchMap,
-  take,
   tap,
 } from 'rxjs';
 import { Digimon } from 'src/app/Digimon';
@@ -22,7 +22,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./digimon-table.component.css'],
 })
 export class DigimonTableComponent implements OnInit {
-  digimons$ = this.digimonService.digimons$.pipe(take(1));
+  digimons$ = this.digimonService.digimons$.pipe(shareReplay(1));
   results$!: Observable<Digimon[]> | undefined;
   form!: FormGroup;
 
